@@ -1,105 +1,82 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react';
-import { BriefcaseIcon, GraduationCapIcon } from 'lucide-react';
+import React from 'react';
+
 type Experience = {
   id: number;
   title: string;
-  company: string;
-  period: string;
-  description: string;
-  type: 'work' | 'education';
+  org: string;
+  role: string;
+  bullets: string[];
 };
-export function ExperienceSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const experiences: Experience[] = [{
-    id: 2,
-    title: 'Junior / Trainee Fullstack Developer',
-    company: 'Servi',
-    period: '2023 - 2024',
-    description: 'Responsible for creating the platform, creating backend and frontend content, using languages ​​such as NextJS, ReactJS, NodeJS, MongoDB, among others',
-    type: 'work'
-  }, {
+
+const experiences: Experience[] = [
+  {
     id: 1,
-    title: 'Freelancer',
-    company: 'Me',
-    period: '2023 - Actually',
-    description: 'Freelance projects of all kinds, frontend and backend web development, video editor, reels, and ui / ux editor.',
-    type: 'work'
-  }, {
-    id: 5,
+    title: "Junior / Trainee Fullstack Developer",
+    org: "Servi",
+    role: "2023 - 2024",
+    bullets: [
+      "Responsible for creating the platform, building backend and frontend content using Next.js, React, Node.js, MongoDB and others.",
+      "Developed full-stack features from scratch in a fast-paced environment."
+    ]
+  },
+  {
+    id: 2,
+    title: "Freelancer",
+    org: "Self-employed",
+    role: "2023 - Present",
+    bullets: [
+      "Freelance projects of all kinds: frontend and backend web development, video editing, reels, and UI/UX design.",
+      "Delivered custom solutions for multiple clients across different industries."
+    ]
+  },
+  {
+    id: 3,
     title: "Bachelor's Degree in Computer Science",
-    company: 'Universidad Nacional De Rio Cuarto',
-    period: '2023 - Actually',
-    description: 'Studied computer science fundamentals, algorithms, data structures, and project management',
-    type: 'education'
-  }, {
-    id: 7,
-    title: "Courses, Bootcamps",
-    company: 'Mulltiplies companys',
-    period: '2022 - Actually',
-    description: 'Whenever I can, I sign up for a course or bootcamp to continue learning technologies or improve.',
-    type: 'education'
-  }];
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        timelineItems.forEach((item, index) => {
-          setTimeout(() => {
-            item.classList.add('opacity-100');
-            item.classList.remove('opacity-0', 'translate-y-10');
-          }, 200 * index);
-        });
-      }
-    }, {
-      threshold: 0.1
-    });
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
-    };
-  }, []);
-  return <section id="experience" className="py-12 px-4 bg-[#393E46]" ref={sectionRef}>
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center">
-          <span className="border-b-4 border-[#FFD369] pb-2">
-            Experience & Education
-          </span>
-        </h2>
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-[#FFD369]/30"></div>
-          {experiences.map((experience, index) => <div key={experience.id} className={`timeline-item mb-8 flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} opacity-0 translate-y-10 transition-all duration-700`}>
-              <div className="md:w-1/2 relative">
-                <div className={`bg-[#393E46] p-4 rounded-lg border border-[#FFD369]/20 hover:border-[#FFD369]/50 transition-all ${index % 2 === 0 ? 'md:mr-6' : 'md:ml-6'}`}>
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-8 bg-[#FFD369]/10 rounded-full flex items-center justify-center">
-                      {experience.type === 'work' ? <BriefcaseIcon size={16} className="text-[#FFD369]" /> : <GraduationCapIcon size={16} className="text-[#FFD369]" />}
-                    </div>
-                    <div>
-                      <h3 className="text-base font-bold text-[#EEEEEE]">
-                        {experience.title}
-                      </h3>
-                      <p className="text-[#FFD369] text-xs">
-                        {experience.company}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-[#EEEEEE]/70 text-xs mb-2">
-                    {experience.period}
-                  </p>
-                  <p className="text-[#EEEEEE] text-sm">
-                    {experience.description}
-                  </p>
-                </div>
-                {/* Timeline dot */}
-                <div className="absolute top-6 w-4 h-4 rounded-full bg-[#FFD369] hidden md:block" style={{
-              [index % 2 === 0 ? 'right' : 'left']: '-10px'
-            }}></div>
-              </div>
-            </div>)}
-        </div>
+    org: "Universidad Nacional De Rio Cuarto",
+    role: "2023 - Present",
+    bullets: [
+      "Studied computer science fundamentals, algorithms, data structures, and project management.",
+      "Continuously learning new technologies and improving skills."
+    ]
+  },
+  {
+    id: 4,
+    title: "Courses & Bootcamps",
+    org: "Multiple platforms",
+    role: "2022 - Present",
+    bullets: [
+      "Constantly signing up for courses and bootcamps to continue learning technologies or improve existing skills."
+    ]
+  }
+];
+
+export function ExperienceSection() {
+  return (
+    <section id="experience" className="panel" data-reveal>
+      <div className="panel-head">
+        <p className="label">experience</p>
+        <a className="panel-link resume-cta" href="https://export-download.canva.com/ift5k/DAF97Zift5k/34/0-202014536380734434.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250916T054604Z&X-Amz-Expires=33645&X-Amz-Signature=f453376737eedd3bb4c481f93a9b128c7b53d5e8a01b8ffda7e7b8116ca6ef7f&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27CV%2520-%2520FRANCITORRA%2520JUAN%2520CRUZ%2520FULLSTACK.pdf&response-expires=Tue%2C%2016%20Sep%202025%2015%3A06%3A49%20GMT" target="_blank" rel="noopener noreferrer">
+          view resume ↗
+        </a>
       </div>
-    </section>;
+      <div className="stack">
+        {experiences.map((exp) => (
+          <article key={exp.id} className="entry">
+            <div className="entry-top">
+              <h3 className="entry-title">{exp.title}</h3>
+            </div>
+            <p className="entry-org">{exp.org}</p>
+            <p className="entry-role">{exp.role}</p>
+            <ul className="entry-bullets">
+              {exp.bullets.map((bullet, i) => (
+                <li key={i}>{bullet}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
 }
