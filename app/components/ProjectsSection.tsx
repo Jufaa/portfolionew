@@ -10,6 +10,7 @@ type Project = {
   stack: string[];
   summary: string;
   points: string[];
+  size: 'large' | 'small';
 };
 
 const projects: Project[] = [
@@ -23,7 +24,8 @@ const projects: Project[] = [
     points: [
       "AI assistant generates efficient, science-backed workout plans customized to fitness level and goals.",
       "Tools to monitor achievements through visual charts and metrics with social sharing features."
-    ]
+    ],
+    size: 'large'
   },
   {
     id: 2,
@@ -35,7 +37,8 @@ const projects: Project[] = [
     points: [
       "Landing page for company branding and visibility.",
       "Built with responsive design and modern UI patterns."
-    ]
+    ],
+    size: 'small'
   },
   {
     id: 3,
@@ -47,7 +50,8 @@ const projects: Project[] = [
     points: [
       "Full-stack administrative platform with backend API.",
       "Designed for professional accounting workflows."
-    ]
+    ],
+    size: 'small'
   },
   {
     id: 4,
@@ -59,7 +63,8 @@ const projects: Project[] = [
     points: [
       "Pre-launch page with email capture for early access.",
       "Integrated email notifications with Resend."
-    ]
+    ],
+    size: 'large'
   }
 ];
 
@@ -67,14 +72,18 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="panel projects-panel" data-reveal>
       <div className="panel-head projects-head">
-        <p className="label">my projects</p>
-        <a className="panel-link projects-cta" href="https://github.com/jufa" target="_blank" rel="noopener noreferrer">
+        <p className="label" data-scramble="my projects">my projects</p>
+        <a className="panel-link projects-cta" href="https://github.com/jufa" target="_blank" rel="noopener noreferrer" data-magnetic>
           view more projects ↗
         </a>
       </div>
-      <div className="projects-grid">
+      <div className="projects-masonry">
         {projects.map((project) => (
-          <article key={project.id} className="project-card">
+          <article
+            key={project.id}
+            className={`project-card project-card-${project.size}`}
+            data-tilt
+          >
             <div className="project-top">
               <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-title">
                 {project.title} <span>↗</span>

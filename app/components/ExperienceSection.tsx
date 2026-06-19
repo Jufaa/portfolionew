@@ -56,14 +56,14 @@ export function ExperienceSection() {
   return (
     <section id="experience" className="panel" data-reveal>
       <div className="panel-head">
-        <p className="label">experience</p>
-        <a className="panel-link resume-cta" href="https://export-download.canva.com/ift5k/DAF97Zift5k/34/0-202014536380734434.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250916T054604Z&X-Amz-Expires=33645&X-Amz-Signature=f453376737eedd3bb4c481f93a9b128c7b53d5e8a01b8ffda7e7b8116ca6ef7f&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27CV%2520-%2520FRANCITORRA%2520JUAN%2520CRUZ%2520FULLSTACK.pdf&response-expires=Tue%2C%2016%20Sep%202025%2015%3A06%3A49%20GMT" target="_blank" rel="noopener noreferrer">
+        <p className="label" data-scramble="experience">experience</p>
+        <a className="panel-link resume-cta" href="https://export-download.canva.com/ift5k/DAF97Zift5k/34/0-202014536380734434.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250916T054604Z&X-Amz-Expires=33645&X-Amz-Signature=f453376737eedd3bb4c481f93a9b128c7b53d5e8a01b8ffda7e7b8116ca6ef7f&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27CV%2520-%2520FRANCITORRA%2520JUAN%2520CRUZ%2520FULLSTACK.pdf&response-expires=Tue%2C%2016%20Sep%202025%2015%3A06%3A49%20GMT" target="_blank" rel="noopener noreferrer" data-magnetic>
           view resume ↗
         </a>
       </div>
       <div className="stack">
         {experiences.map((exp) => (
-          <article key={exp.id} className="entry">
+          <article key={exp.id} className="entry" data-tilt>
             <div className="entry-top">
               <h3 className="entry-title">{exp.title}</h3>
             </div>

@@ -62,26 +62,26 @@ export function SillyStats() {
   const miles = (feet / 5280).toFixed(2);
 
   return (
-    <section id="silly-stats" className="panel" data-reveal>
+    <section id="silly-stats" className="panel activity-panel" data-reveal>
       <div className="panel-head">
-        <p className="label">silly stats</p>
+        <p className="label" data-scramble="silly stats">silly stats</p>
         <p className="activity-sub">live counters</p>
       </div>
       <div className="activity-grid">
-        <div className="silly-stat">
+        <div className="silly-stat" data-tilt>
           <span className="silly-stat-label">mouse clicks</span>
           <span className="silly-stat-value">{formatNumber(stats.clicks)}</span>
         </div>
-        <div className="silly-stat">
+        <div className="silly-stat" data-tilt>
           <span className="silly-stat-label">mouse travel</span>
           <span className="silly-stat-value">{formatNumber(Math.round(feet))} ft</span>
           <span className="silly-stat-sub">{miles} mi</span>
         </div>
-        <div className="silly-stat">
+        <div className="silly-stat" data-tilt>
           <span className="silly-stat-label">mouse scrolls</span>
           <span className="silly-stat-value">{formatNumber(stats.scrolls)}</span>
         </div>
-        <div className="silly-stat">
+        <div className="silly-stat" data-tilt>
           <span className="silly-stat-label">keypresses</span>
           <span className="silly-stat-value">{formatNumber(stats.keys)}</span>
         </div>

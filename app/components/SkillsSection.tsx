@@ -25,15 +25,15 @@ export function SkillsSection() {
   return (
     <section id="skills" className="panel" data-reveal>
       <div className="panel-head">
-        <p className="label">skills</p>
+        <p className="label" data-scramble="skills">skills</p>
       </div>
       <div className="skill-columns">
         {skillGroups.map((group) => (
-          <article key={group.title} className="skill-group">
+          <article key={group.title} className="skill-group" data-tilt>
             <h3>{group.title}</h3>
             <div className="chip-cloud">
               {group.skills.map((skill) => (
-                <span key={skill} className="chip">{skill}</span>
+                <span key={skill} className="chip" data-magnetic>{skill}</span>
               ))}
             </div>
           </article>
