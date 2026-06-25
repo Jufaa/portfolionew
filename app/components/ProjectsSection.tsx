@@ -46,7 +46,7 @@ const projects: Project[] = [
     url: "https://www.brash.cl/",
     date: "2024",
     stack: ["next.js", "typescript", "express.js"],
-    summary: "administrative software for companies and accountants. Developed and designed by professional accountants.",
+    summary: "administrative software for companies and accountants. developed and designed by professional accountants.",
     points: [
       "full-stack administrative platform with backend API.",
       "designed for professional accounting workflows."
