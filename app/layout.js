@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Juan Cruz Francitorra | Portfolio",
-  description: "Developer & Diseñador - Creating engaging and functional digital experiences.",
+  title: "juan cruz francitorra | portfolio",
+  description: "developer & designer - creating engaging and functional digital experiences.",
 };
 
 export default function RootLayout({ children }) {

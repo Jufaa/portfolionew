@@ -14,7 +14,7 @@ export function Header() {
     <header className="site-nav">
       <div className="nav-inner">
         <button className="nav-brand" onClick={() => scrollToSection('top')}>
-          {'<juan />'}
+          {'<jufa />'}
         </button>
         <nav aria-label="main navigation">
           <ul className="nav-list">

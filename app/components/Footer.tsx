@@ -7,8 +7,8 @@ export function Footer() {
     <footer id="contact" className="site-footer footer-pro" data-reveal>
       <div className="footer-pro-left">
         <p className="footer-kicker" data-scramble="contact">contact</p>
-        <p className="footer-title">Open to freelance work, collaborations, and new opportunities.</p>
-        <p className="footer-meta">© 2026 Juan Cruz Francitorra.</p>
+        <p className="footer-title">open to freelance work, collaborations, and new opportunities.</p>
+        <p className="footer-meta">© 2026 juan cruz francitorra.</p>
       </div>
       <div className="footer-actions">
         <a href="mailto:jufaworks@gmail.com" data-magnetic>email ↗</a>

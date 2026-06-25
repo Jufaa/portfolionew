@@ -5,19 +5,19 @@ import React from 'react';
 const skillGroups = [
   {
     title: "languages",
-    skills: ["JavaScript", "TypeScript", "HTML/CSS"]
+    skills: ["javascript", "java", "python", "typescript", "html/css"]
   },
   {
     title: "frameworks",
-    skills: ["React", "Next.js", "Node.js", "Express.js"]
+    skills: ["react", "next.js", "node.js", "express.js"]
   },
   {
     title: "tools",
-    skills: ["Supabase", "Prisma", "MySQL", "Tailwind CSS"]
+    skills: ["supabase", "prisma", "mysql", "tailwind css"]
   },
   {
     title: "other",
-    skills: ["Framer Motion", "Stripe", "OpenAI", "Resend"]
+    skills: ["framer motion", "stripe", "openai", "resend"]
   }
 ];
 

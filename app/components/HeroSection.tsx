@@ -36,7 +36,7 @@ export function HeroSection() {
             <span>2026</span>
           </p>
           <h1 className="hero-name">
-            <span data-scramble="Juan Cruz Francitorra">Juan Cruz Francitorra</span>
+            <span data-scramble="juan cruz francitorra">juan cruz francitorra</span>
           </h1>
           <p className="hero-about">
             <span className="typing-text">{typedText}</span>
@@ -45,51 +45,27 @@ export function HeroSection() {
           <p className="hero-subline">crafting engaging and functional digital experiences.</p>
           <div className="hero-status">
             <span className="status-dot" aria-hidden="true"></span>
-            <span>Available for opportunities</span>
+            <span>available for opportunities</span>
             <span className="status-pill">Remote</span>
           </div>
           <div className="hero-links-plain">
-            <a href="https://github.com/jufa" target="_blank" rel="noopener noreferrer" data-magnetic>github ↗</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-magnetic>linkedin ↗</a>
+            <a href="https://github.com/jufaa" target="_blank" rel="noopener noreferrer" data-magnetic>github ↗</a>
+            <a href="https://www.linkedin.com/in/juanfrancitorra/" target="_blank" rel="noopener noreferrer" data-magnetic>linkedin ↗</a>
             <a href="mailto:jufaworks@gmail.com" data-magnetic>email ↗</a>
           </div>
-        </div>
-        <div className="profile-ascii" aria-hidden="true">
-          <pre className="ascii-artwork ascii-hat-art">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠛⣉⣉⣉⣉⣛⣛⣛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⣫⣵⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣤⣈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⡉⠁⣴⡶⠶⠶⠤⠤⠲⠂⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⣈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⣋⣴⡿⢫⣶⣿⣿⠿⠟⠛⠛⠊⠃⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⠋⠰⢚⣫⣵⣶⠿⠛⣡⣶⣿⣿⣿⣿⣿⣷⢸⠗⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⣀⣤⣤⡀⠉⢉⠙⠛⠻⠿⣿⣿⣿⣿
-⣿⣿⡿⣉⣭⣴⠆⣠⡶⠿⣛⣩⣤⣶⣿⡿⠟⣋⣥⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡉⠙⢿⣿⣿⣿⣶⣾⣿⣿⣿⣶⣦⣄⠉⠻⣿
-⣿⢋⣀⣭⣭⢁⣿⡟⣁⣾⣿⠿⢿⣿⠋⢴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣷⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠸
-⣧⣸⣿⡿⢡⣿⣿⣿⣿⡟⢁⣴⣿⣿⣷⣶⣶⣶⣶⣶⣶⣶⣶⣶⣄⣶⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠆⠀⠀⢒⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⢰
-⣿⣿⡟⣡⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⠿⠟⠛⣛⣛⣛⣛⣛⣛⣛⣫⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠁⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢀⣾
-⣿⠏⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠂⠀⠀⠀⠉⠀⠘⠁⠛⠿⠿⠿⠏⢻⣿⡿⠿⠉⠛⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⢠⣾⣿
-⣯⣴⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⠿⠋⣠⣴⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠁⠀⣠⣴⣶⣶⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⠿⠃⣀⣴⣾⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⣾⣿⣿⣿⣿⣿⣿⣷⣴⣦⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⡿⠟⠛⠉⢠⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⠿⠋⣁⠰⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⠟⣋⣴⣾⣿⣿⠀⠀⠙⠿⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⢀⡀⠹⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⢃⣼⣿⣿⣿⣿⡏⠄⠀⠀⠀⠀⠉⠛⠛⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠛⠋⠁⣠⣶⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠘⣿⣄⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣣⣾⣿⣿⣿⣷⣿⡇⢰⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠉⠀⠀⠀⠀⠀⠀⠀⠰⢾⣶⣴⡾⠟⢁⣀⣤⠀⠀⢸⡆⠀⠀⠉⠳⣦⣸⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⡆⢸⡇⠀⠀⠀⠀⠀⢀⠀⠀⠀⠄⠀⠀⠀⠂⠀⠀⣠⣤⣄⡀⠐⢶⣶⣶⠺⠏⠉⣽⡟⠀⢠⡿⠁⠀⠹⣿⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⢿⣄⣷⡀⠀⠀⠀⠰⣶⣶⣶⣶⣶⣶⡆⠀⠸⣿⣿⣿⣿⣿⣷⣿⣯⣴⣬⣿⣿⠃⠴⠋⢸⣿⣷⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣖⢿⣿⣿⣦⣀⠘⢶⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⣴⣤⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⡄⠻⣿⣿⣿⣿⣿⣿⣦⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⡿⣣⣶⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⣀⠈⠻⣿⣿⣯⣭⣭⣭⣭⣭⣭⣭⣭⣿⣿⣿⠟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⡆⣧⠈⠛⢿⣿⣿⣧⣤⣤⣽⣿⣿⣿⠟⢁⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡯⣿⣿⣿⣿⣿⣿⡇⣿⣧⠀⠀⠈⠙⠻⢿⣿⣿⠿⠋⠀⠀⣏⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠿⣿⠿⢧⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠄⠀⠀⣼⣿⡄⢿⣿⡿⠿⠿⠟⠛⠛⠻⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⡿⢁⣴⣶⣾⣿⣿⣷⣶⣶⡆⣸⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣧⡀⢤⣶⣶⣾⣿⣿⣿⣿⣿⣶⣦⡀⠙⢿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⡟⠁⣿⣿⣿⣿⠿⠛⠋⠉⣁⣰⣿⣿⡜⣿⣿⡄⠀⠀⠈⢀⣴⡆⠀⣸⣿⣿⣿⣿⣦⡹⠿⠛⠛⠻⠿⢿⣿⣿⣿⣿⣦⡈⢻⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⡿⢁⣤⣤⣄⠰⣿⣿⣿⣿⡇⠸⣿⣿⡀⠀⢤⣾⣿⠁⢀⣿⠟⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣿⣦⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⣾⣿⣿⣿⡆⠹⣿⣿⣿⡇⠀⢻⣿⣷⠀⢸⣿⡟⠀⣸⡏⢰⣿⣿⣿⣿⣿⠏⣸⣿⣿⣶⣶⣤⡀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠈⣉⣉⣉⣉⣩⣀⠊⠛⠿⠗⠀⠘⣿⣿⣧⠈⣿⣧⣴⡿⠀⣾⠟⠉⣩⣥⡀⢀⣤⣤⣤⣤⣤⣤⣤⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣦⣼⣿⣶⣤⡀⢹⣿⣿⣇⠹⣿⠟⠁⣰⣇⣴⣾⣿⡿⢁⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⣿⣿⣿⣦⣤⣤⣤⣿⣿⣿⣿⣿⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿</pre>
-          <div className="ascii-glow"></div>
+          <a
+            href="/francitorra-fullstack.pdf"
+            download="CV - Francitorra Juan Cruz.pdf"
+            className="hero-cv-btn"
+            data-magnetic
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            download resume
+          </a>
         </div>
       </div>
     </section>

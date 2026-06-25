@@ -7,14 +7,14 @@ export function GitHubGraph() {
     <section id="github-graph" className="panel github-panel" data-reveal>
       <div className="panel-head">
         <p className="label" data-scramble="github commit graph">github commit graph</p>
-        <a className="panel-link projects-cta" href="https://github.com/jufa" target="_blank" rel="noopener noreferrer" data-magnetic>
+        <a className="panel-link projects-cta" href="https://github.com/jufaa" target="_blank" rel="noopener noreferrer" data-magnetic>
           open github ↗
         </a>
       </div>
       <div className="graph-frame">
         <img
-          src="https://ghchart.rshah.org/ededed/jufa"
-          alt="GitHub contribution heatmap for jufa"
+          src="https://ghchart.rshah.org/ededed/jufaa"
+          alt="GitHub contribution heatmap for jufaa"
           loading="lazy"
           decoding="async"
           width={900}

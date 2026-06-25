@@ -635,12 +635,66 @@ body[data-vision="retro"] .profile-hero.profile-hero-ascii {
   background: rgba(255, 213, 79, 0.06);
 }
 
+.hero-cv-btn {
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  color: #000;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  cursor: pointer;
+  display: inline-flex;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 18px rgba(255, 213, 79, 0.25);
+}
+
+.hero-cv-btn:hover {
+  background: #ffe082;
+  box-shadow: 0 0 28px rgba(255, 213, 79, 0.45);
+  transform: translateY(-1px);
+}
+
+.hero-cv-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+body[data-vision="light"] .hero-cv-btn {
+  color: #fff;
+  background: #b8860b;
+  border-color: #b8860b;
+  box-shadow: 0 0 18px rgba(184, 134, 11, 0.25);
+}
+
+body[data-vision="light"] .hero-cv-btn:hover {
+  background: #d4a017;
+  box-shadow: 0 0 28px rgba(184, 134, 11, 0.45);
+}
+
+body[data-vision="retro"] .hero-cv-btn {
+  color: #000;
+  background: #33ff33;
+  border-color: #33ff33;
+  box-shadow: 0 0 18px rgba(51, 255, 51, 0.25);
+}
+
+body[data-vision="retro"] .hero-cv-btn:hover {
+  background: #66ff66;
+  box-shadow: 0 0 28px rgba(51, 255, 51, 0.45);
+}
+
 /* ======================== */
 /* ASCII ART PANEL          */
 /* ======================== */
 .profile-ascii {
   width: min(100%, 360px);
-  aspect-ratio: 1;
   background: #090806;
   border: 1px solid #ffd54f24;
   border-radius: 14px;
@@ -674,12 +728,14 @@ body[data-vision="retro"] .profile-ascii { background: #050505; border-color: #3
 
 .ascii-hat-art {
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.35rem;
-  line-height: 1.1;
+  font-size: 5px;
+  line-height: 1;
   white-space: pre;
   color: var(--accent);
   text-shadow: 0 0 8px var(--accent-glow, rgba(255, 215, 79, 0.3));
   margin: 0;
+  transform: scale(0.55);
+  transform-origin: center center;
 }
 
 .ascii-glow {
