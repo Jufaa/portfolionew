@@ -11,9 +11,9 @@ export function Footer() {
         <p className="footer-meta">© 2026 juan cruz francitorra.</p>
       </div>
       <div className="footer-actions">
-        <a href="mailto:jufaworks@gmail.com" data-magnetic>email ↗</a>
-        <a href="https://github.com/jufa" target="_blank" rel="noopener noreferrer" data-magnetic>github ↗</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-magnetic>linkedin ↗</a>
+        <a href="mailto:juanfrancitorra@gmail.com" data-magnetic>email ↗</a>
+        <a href="https://github.com/Jufaa" target="_blank" rel="noopener noreferrer" data-magnetic>github ↗</a>
+        <a href="https://www.linkedin.com/in/juanfrancitorra/" target="_blank" rel="noopener noreferrer" data-magnetic>linkedin ↗</a>
       </div>
     </footer>
   );

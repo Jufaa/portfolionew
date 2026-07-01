@@ -5,7 +5,6 @@ import { HeroSection } from './components/HeroSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { SkillsSection } from './components/SkillsSection';
-import { GitHubGraph } from './components/GitHubGraph';
 import { Footer } from './components/Footer';
 import { ClientEffects } from './components/ClientEffects';
 
@@ -53,7 +52,6 @@ export function Homes() {
         <ProjectsSection />
         <ExperienceSection />
         <SkillsSection />
-        <GitHubGraph />
       </main>
       <Footer />
       <button

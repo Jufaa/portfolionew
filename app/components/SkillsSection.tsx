@@ -5,19 +5,35 @@ import React from 'react';
 const skillGroups = [
   {
     title: "languages",
-    skills: ["javascript", "java", "python", "typescript", "html/css"]
+    skills: ["typescript", "javascript", "java", "python"]
   },
   {
-    title: "frameworks",
-    skills: ["react", "next.js", "node.js", "express.js"]
+    title: "frontend",
+    skills: ["react", "next.js", "tailwind css", "zustand", "tanstack react query"]
   },
   {
-    title: "tools",
-    skills: ["supabase", "prisma", "mysql", "tailwind css"]
+    title: "backend",
+    skills: ["node.js", "express.js", "prisma orm", "sequelize orm", "zod", "passport.js", "nextauth.js"]
   },
   {
-    title: "other",
-    skills: ["framer motion", "stripe", "openai", "resend"]
+    title: "databases",
+    skills: ["postgresql", "mysql", "mongodb", "supabase"]
+  },
+  {
+    title: "auth & security",
+    skills: ["jwt", "oauth 2.0", "rbac", "2fa (totp)"]
+  },
+  {
+    title: "architecture",
+    skills: ["rest apis", "clean architecture", "hexagonal architecture", "repository pattern", "multi-tenant saas"]
+  },
+  {
+    title: "cloud & devops",
+    skills: ["docker", "docker compose", "github actions", "railway", "vercel"]
+  },
+  {
+    title: "tools & integrations",
+    skills: ["git", "github", "jest", "supertest", "swagger/openapi", "stripe", "socket.io", "afip/arca"]
   }
 ];
 

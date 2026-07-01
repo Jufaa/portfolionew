@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 export function HeroSection() {
   const [typedText, setTypedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = 'developer & diseñador';
+  const fullText = 'software engineer';
   let idx = 0;
 
   useEffect(() => {
@@ -51,10 +51,10 @@ export function HeroSection() {
           <div className="hero-links-plain">
             <a href="https://github.com/jufaa" target="_blank" rel="noopener noreferrer" data-magnetic>github ↗</a>
             <a href="https://www.linkedin.com/in/juanfrancitorra/" target="_blank" rel="noopener noreferrer" data-magnetic>linkedin ↗</a>
-            <a href="mailto:jufaworks@gmail.com" data-magnetic>email ↗</a>
+            <a href="mailto:juanfrancitorra@gmail.com" data-magnetic>email ↗</a>
           </div>
           <a
-            href="/francitorra-fullstack.pdf"
+            href="/francitorra-softwareengineer.pdf"
             download="CV - Francitorra Juan Cruz.pdf"
             className="hero-cv-btn"
             data-magnetic
